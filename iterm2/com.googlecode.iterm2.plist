@@ -4837,9 +4837,9 @@
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
-	<integer>3</integer>
+	<integer>8</integer>
 	<key>TerminalVMargin</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>URLHandlersByGuid</key>
 	<dict>
 		<key>iterm2</key>
