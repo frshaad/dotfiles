@@ -1,10 +1,14 @@
 #!/bin/zsh
 
-# Ensure the script runs with sudo for protected settings.
+# macOS Defaults Customization
+# Warning: Some settings may require admin privileges
+
+# Check for sudo permission at the start
 if [ "$EUID" -ne 0 ]; then
-    echo "Some settings require sudo permissions. Please re-run with sudo."
-    exit 1
+    echo "Some macOS customizations may require sudo privileges. Please run with sudo if necessary."
 fi
+
+echo "Setting macOS defaults..."
 
 # Expand save/print panels by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -92,3 +96,5 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Apply changes
 killall Dock
+
+echo "macOS defaults applied!"
