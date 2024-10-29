@@ -3,7 +3,7 @@
 # ========================
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fzf)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # ========================
@@ -62,10 +62,3 @@ export BAT_THEME=tokyonight_night
 # ========================
 eval "$(zoxide init zsh)"
 eval "$(fnm env)"
-
-# ========================
-# fzf Customizations
-# ========================
-# Use fd for path candidates and directory completion
-_fzf_compgen_path() { fd --hidden --exclude .git . "$1"; }
-_fzf_compgen_dir() { fd --type=d --hidden --exclude .git . "$1"; }

@@ -1,38 +1,23 @@
-# Taps
-tap "grishka/grishka"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "jesseduffield/lazygit"
-tap "localsend/localsend"
 tap "mongodb/brew"
-
-# CLI Utilities
 brew "aria2"
-brew "bat"          # cat alternative with syntax highlighting
-brew "entr"         # Run arbitrary commands when files change
-brew "exiftool"     # Metadata management
-brew "eza"          # Enhanced 'ls' command
-brew "fd"           # Fast and user-friendly 'find' alternative
-brew "ffmpeg"       # Multimedia processing
-brew "fnm"          # Node version manager
-brew "fzf"          # Fuzzy finder
-brew "gh"           # GitHub CLI
-brew "git"          # Version control
-brew "imagemagick"  # Image processing
 brew "libgit2@1.7"
-brew "neovim"       # Vim-based text editor
-brew "node"         # Node.js runtime
-brew "pkg-config"
-brew "ripgrep"      # Fast grep alternative
-brew "tldr"         # Simplified man pages
-brew "tree"         # Directory structure viewer
-brew "yt-dlp"       # YouTube downloader
-brew "zoxide"       # Directory jumper
-
-# Databases
+brew "bat"
+brew "exiftool"
+brew "eza"
+brew "fd"
+brew "ffmpeg"
+brew "fnm"
+brew "gh"
+brew "git"
+brew "node"
+brew "ripgrep"
+brew "tldr"
+brew "tree"
+brew "yt-dlp"
+brew "zoxide"
 brew "mongodb/brew/mongodb-community"
-
-# macOS Applications (Casks)
 cask "alt-tab"
 cask "android-file-transfer"
 cask "android-platform-tools"
@@ -58,9 +43,6 @@ cask "rectangle"
 cask "stats"
 cask "telegram"
 cask "visual-studio-code"
-
-# VSCode Extensions
-vscode "aaron-bond.better-comments"
 vscode "bradlc.vscode-tailwindcss"
 vscode "christian-kohler.npm-intellisense"
 vscode "christian-kohler.path-intellisense"
@@ -68,11 +50,9 @@ vscode "dbaeumer.vscode-eslint"
 vscode "donjayamanne.githistory"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "equinusocio.vsc-material-theme"
-vscode "equinusocio.vsc-material-theme-icons"
 vscode "esbenp.prettier-vscode"
 vscode "foxundermoon.shell-format"
 vscode "lokalise.i18n-ally"
-vscode "miguelsolorio.fluent-icons"
 vscode "mikestead.dotenv"
 vscode "pkief.material-icon-theme"
 vscode "visualstudioexptteam.intellicode-api-usage-examples"

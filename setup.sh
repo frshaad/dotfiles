@@ -37,7 +37,19 @@ echo "Setting up symbolic links..."
 create_symlink "$DOTFILES_DIR/zsh/.zshrc" ~/.zshrc
 create_symlink "$DOTFILES_DIR/vscode/vscode-settings.json" ~/Library/Application\ Support/Code/User/settings.json
 create_symlink "$DOTFILES_DIR/git/.gitconfig" ~/.gitconfig
-create_symlink "$DOTFILES_DIR/iterm/com.googlecode.iterm2.plist" ~/Library/Preferences/com.googlecode.iterm2.plist
+create_symlink "$DOTFILES_DIR/login/.hushlogin" ~/.hushlogin
+create_symlink "$DOTFILES_DIR/vim/.vimrc" ~/.vimrc
+
+# iTerm2 Dynamic Profiles setup
+ITERM_PROFILE_SOURCE="$DOTFILES_DIR/iterm/frshaad.json"
+ITERM_PROFILE_TARGET=~/Library/Application\ Support/iTerm2/DynamicProfiles/frshaad.json
+
+if [ -f "$ITERM_PROFILE_SOURCE" ]; then
+    create_symlink "$ITERM_PROFILE_SOURCE" "$ITERM_PROFILE_TARGET"
+    echo "Linked iTerm2 profiles."
+else
+    echo "No iTerm2 profile JSON found; skipping profile setup."
+fi
 
 # Optional: Set up SSH config if file exists
 if [ -f "$DOTFILES_DIR/ssh/config" ]; then
