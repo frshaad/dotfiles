@@ -1,0 +1,9 @@
+[user]
+	name = Farshad Hatami
+	email = 76130454+frshaad@users.noreply.github.com
+[alias]
+	lg = log --color --graph --pretty=format:'%C(auto)%h -%C(yellow)%d %Creset%s %Cgreen(%cr) %C(bold blue)<%an>' --abbrev-commit
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input

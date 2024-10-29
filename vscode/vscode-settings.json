@@ -1,0 +1,83 @@
+{
+  // ========================
+  // Editor Settings
+  // ========================
+  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.8,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1500,
+
+  // ========================
+  // Terminal Settings
+  // ========================
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontSize": 15,
+  "terminal.explorerKind": "integrated",
+
+  // ========================
+  // Git Settings
+  // ========================
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+
+  // ========================
+  // Tailwind CSS Settings
+  // ========================
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+
+  // ========================
+  // NPM Settings
+  // ========================
+  "npm.packageManager": "pnpm",
+
+  // ========================
+  // Workbench Settings
+  // ========================
+  "window.zoomLevel": 1,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.sideBar.location": "right",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+
+  // ========================
+  // Material Icon Theme Settings
+  // ========================
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.hidesExplorerArrows": true,
+
+  // ========================
+  // TypeScript & JavaScript Settings
+  // ========================
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // ========================
+  // Miscellaneous
+  // ========================
+  "telemetry.telemetryLevel": "off",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "reactSnippets.settings.importReactOnTop": false
+}
