@@ -42,7 +42,7 @@ apply_default "Set Dock hide/show animation speed" \
 
 # Adjust dock size
 apply_default "Set Dock size" \
-    "defaults write com.apple.dock tilesize -int 36"
+    "defaults write com.apple.dock tilesize -int 48"
 
 # Minimize windows using the scale effect
 apply_default "Set Dock minimize effect to scale" \
