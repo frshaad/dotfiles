@@ -12,8 +12,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.addMissingImports": true
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit"
   },
   "files.associations": {
     "*.css": "tailwindcss"
@@ -53,7 +53,7 @@
   // ========================
   "window.zoomLevel": 1,
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Material Theme Darker",
   "workbench.sideBar.location": "right",
   "workbench.layoutControl.enabled": false,
