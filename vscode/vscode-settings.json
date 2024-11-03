@@ -3,7 +3,7 @@
   // Editor Settings
   // ========================
   "editor.fontFamily": "Hack Nerd Font",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.lineHeight": 1.8,
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
@@ -51,7 +51,7 @@
   // ========================
   // Workbench Settings
   // ========================
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 1.1,
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Material Theme Darker",
@@ -79,5 +79,6 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "explorer.confirmDragAndDrop": false,
-  "reactSnippets.settings.importReactOnTop": false
+  "reactSnippets.settings.importReactOnTop": false,
+  "editor.minimap.enabled": false
 }
