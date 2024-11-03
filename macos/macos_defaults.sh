@@ -19,6 +19,15 @@ apply_default() {
     eval "$command" || echo "Warning: Failed to apply $description"
 }
 
+# Create Screenshots directory
+mkdir -p ~/Pictures/Screenshots
+
+# Change screenshots saving directory
+apply_default "Change screenshots saving directory" \  "defaults write com.apple.screencapture location ~/Pictures/Screenshots"
+
+# Change screenshots saving directory
+apply_default "Change screenshots file format" \  "defaults write com.apple.screencapture type jpg"
+
 # Expand save/print panels by default
 apply_default "Expand save panels by default" \
     "defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true"
