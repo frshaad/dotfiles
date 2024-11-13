@@ -2,7 +2,7 @@
   // ========================
   // Editor Settings
   // ========================
-  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontFamily": "MesloLGM Nerd Font Mono",
   "editor.fontSize": 16,
   "editor.lineHeight": 1.8,
   "editor.fontLigatures": true,
@@ -24,7 +24,7 @@
   // ========================
   // Terminal Settings
   // ========================
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font Mono",
   "terminal.integrated.fontSize": 15,
   "terminal.explorerKind": "integrated",
 
@@ -51,11 +51,10 @@
   // ========================
   // Workbench Settings
   // ========================
-  "window.zoomLevel": 1.1,
+  "window.zoomLevel": 1.3,
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Material Theme Darker",
-  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Night Owl (No Italics)",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
 
@@ -80,5 +79,12 @@
   },
   "explorer.confirmDragAndDrop": false,
   "reactSnippets.settings.importReactOnTop": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "workbench.sideBar.location": "right",
+  "breadcrumbs.enabled": false,
+  "editor.padding.top": 12,
+  "workbench.editor.showTabs": "none",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.editorActionsLocation": "hidden"
 }
