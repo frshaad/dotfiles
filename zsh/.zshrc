@@ -62,3 +62,10 @@ export BAT_THEME=tokyonight_night
 # ========================
 eval "$(zoxide init zsh)"
 eval "$(fnm env)"
+
+# pnpm
+case ":$PATH:" in
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
