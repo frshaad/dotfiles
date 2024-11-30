@@ -1,5 +1,8 @@
+user_pref("browser.contentblocking.category", "strict");
+
 user_pref("network.cookie.sameSite.noneRequiresSecure", true);
-user_pref("dom.security.https_first", true);
+user_pref("dom.security.https_only_mode", true);
+// user_pref("dom.security.https_first", true);
 // PREF: display "Not Secure" text on HTTP sites
 // Needed with HTTPS-First Policy; not needed with HTTPS-Only Mode.
 user_pref("security.insecure_connection_text.enabled", true);
@@ -97,3 +100,9 @@ user_pref("full-screen-api.warning.timeout", 0); // default=3000
 
 // disable password manager
 user_pref("signon.rememberSignons", false);
+
+// ============
+// Beta
+// ============
+// Tabs Group
+user_pref("browser.tabs.groups.enabled", true);
