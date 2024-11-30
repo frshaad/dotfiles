@@ -51,10 +51,10 @@
   // ========================
   // Workbench Settings
   // ========================
-  "window.zoomLevel": 1.3,
+  "window.zoomLevel": 1.1,
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
 
@@ -84,7 +84,12 @@
   "workbench.sideBar.location": "right",
   "breadcrumbs.enabled": false,
   "editor.padding.top": 12,
-  "workbench.editor.showTabs": "none",
   "workbench.activityBar.location": "hidden",
-  "workbench.editor.editorActionsLocation": "hidden"
+  "workbench.editor.editorActionsLocation": "hidden",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "workbench.editor.customLabels.patterns": {
+    "**/{layout,page}.tsx": "${dirname} ${filename}"
+  }
 }
