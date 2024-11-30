@@ -23,7 +23,7 @@ alias vim="nvim"
 alias rr='rm -rfI'
 alias exif="exiftool -all= -overwrite_original"
 
-# pnpm Shortcuts
+# pn Shortcuts
 alias pn="pnpm"
 alias pnpx="pnpm exec"
 alias pndx="pnpm dlx"
