@@ -2,7 +2,7 @@
   // ========================
   // Editor Settings
   // ========================
-  "editor.fontFamily": "MesloLGM Nerd Font Mono",
+  "editor.fontFamily": "MesloLGM Nerd Font Mono, Hack Nerd Font",
   "editor.fontSize": 16,
   "editor.lineHeight": 1.8,
   "editor.fontLigatures": true,
@@ -53,16 +53,13 @@
   // ========================
   "window.zoomLevel": 1.1,
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
   "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false,
 
   // ========================
   // Material Icon Theme Settings
   // ========================
   "material-icon-theme.activeIconPack": "react",
-  "material-icon-theme.hidesExplorerArrows": true,
 
   // ========================
   // TypeScript & JavaScript Settings
@@ -81,7 +78,6 @@
   "reactSnippets.settings.importReactOnTop": false,
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
-  "workbench.sideBar.location": "right",
   "breadcrumbs.enabled": false,
   "editor.padding.top": 12,
   "workbench.activityBar.location": "hidden",
@@ -91,5 +87,8 @@
   },
   "workbench.editor.customLabels.patterns": {
     "**/{layout,page}.tsx": "${dirname} ${filename}"
-  }
+  },
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "window.commandCenter": false
+  // "editor.lineNumbers": "relative"
 }
