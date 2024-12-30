@@ -1,12 +1,12 @@
-user_pref("browser.contentblocking.category", "standard");
+user_pref("browser.contentblocking.category", "strict");
 
 user_pref("network.cookie.sameSite.noneRequiresSecure", true);
-// user_pref("dom.security.https_only_mode", true);
-user_pref("dom.security.https_first", true);
+user_pref("dom.security.https_only_mode", true);
+// user_pref("dom.security.https_first", true);
 // PREF: display "Not Secure" text on HTTP sites
 // Needed with HTTPS-First Policy; not needed with HTTPS-Only Mode.
-user_pref("security.insecure_connection_text.enabled", true);
-user_pref("security.insecure_connection_text.pbmode.enabled", true);
+// user_pref("security.insecure_connection_text.enabled", true);
+// user_pref("security.insecure_connection_text.pbmode.enabled", true);
 
 /** SEARCH / URL BAR ***/
 // user_pref("browser.urlbar.trimHttps", true);
@@ -53,9 +53,6 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.aboutConfig.showWarning", false);
 // PREF: add compact mode back to options
 user_pref("browser.compactmode.show", true);
-// PREF: preferred color scheme for websites
-// Dark (0), Light (1), System (2), Browser (3) [DEFAULT FF95+]
-user_pref("layout.css.prefers-color-scheme.content-override", 2);
 // PREF: minimize URL bar suggestions (bookmarks, history, open tabs)
 user_pref("browser.urlbar.suggest.engines", false);
 user_pref("browser.urlbar.suggest.calculator", true);
@@ -100,9 +97,3 @@ user_pref("full-screen-api.warning.timeout", 0); // default=3000
 
 // disable password manager
 user_pref("signon.rememberSignons", false);
-
-// ============
-// Beta
-// ============
-// Tabs Group
-// user_pref("browser.tabs.groups.enabled", true);
