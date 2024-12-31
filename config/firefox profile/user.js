@@ -1,4 +1,4 @@
-user_pref("browser.contentblocking.category", "strict");
+user_pref("browser.contentblocking.category", "standard");
 
 user_pref("network.cookie.sameSite.noneRequiresSecure", true);
 user_pref("dom.security.https_only_mode", true);
