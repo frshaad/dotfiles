@@ -18,6 +18,7 @@ alias ll="eza --icons --color --long"
 alias la="eza --icons --color --long --all"
 alias cd='z'
 alias vim="nvim"
+alias cat="bat"
 
 # System Commands
 alias rr='rm -rfI'
