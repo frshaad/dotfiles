@@ -1,115 +1,87 @@
 {
-  // ========================
-  // Editor Settings
-  // ========================
-  "editor.fontFamily": "Hack Nerd Font, MesloLGM Nerd Font Mono",
-  "editor.fontSize": 16,
-  "editor.lineHeight": 1.8,
-  "editor.fontLigatures": true,
-  "editor.wordWrap": "on",
-  "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit"
-  },
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1500,
-
-  // ========================
-  // Terminal Settings
-  // ========================
-  "terminal.integrated.fontFamily": "Hack Nerd Font, MesloLGM Nerd Font Mono",
-  "terminal.integrated.fontSize": 15,
-  "terminal.explorerKind": "integrated",
-
-  // ========================
-  // Git Settings
-  // ========================
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-
-  // ========================
-  // Tailwind CSS Settings
-  // ========================
-  "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.includeLanguages": {
-    "plaintext": "html"
-  },
-
-  // ========================
-  // NPM Settings
-  // ========================
-  "npm.packageManager": "pnpm",
-
-  // ========================
-  // Workbench Settings
-  // ========================
-  "window.zoomLevel": 1.1,
-  "workbench.startupEditor": "none",
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "workbench.layoutControl.enabled": false,
-
-  // ========================
-  // Material Icon Theme Settings
-  // ========================
-  "material-icon-theme.activeIconPack": "react",
-
-  // ========================
-  // TypeScript & JavaScript Settings
-  // ========================
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-
-  // ========================
-  // Miscellaneous
-  // ========================
-  "telemetry.telemetryLevel": "off",
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "explorer.confirmDragAndDrop": false,
-  "reactSnippets.settings.importReactOnTop": false,
-  "editor.minimap.enabled": false,
-  "editor.tabSize": 2,
-  "breadcrumbs.enabled": false,
-  "editor.padding.top": 12,
-  "workbench.activityBar.location": "hidden",
-  "workbench.editor.editorActionsLocation": "hidden",
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "workbench.editor.customLabels.patterns": {
-    "**/{layout,page}.tsx": "${dirname} ${filename}"
-  },
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
-  "window.commandCenter": false,
-  "material-icon-theme.hidesExplorerArrows": true,
-  "editor.glyphMargin": false,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "explorer.fileNesting.patterns": {
-    "*.ts": "${capture}.js",
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js",
-    "*.tsx": "${capture}.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
-    "*.sqlite": "${capture}.${extname}-*",
-    "*.db": "${capture}.${extname}-*",
-    "*.sqlite3": "${capture}.${extname}-*",
-    "*.db3": "${capture}.${extname}-*",
-    "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*"
-  }
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
+    "editor.fontSize": 17,
+    "editor.lineHeight": 1.6,
+    "editor.fontLigatures": true,
+    // "editor.wordWrap": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+    "editor.linkedEditing": true,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "editor.glyphMargin": false,
+    "editor.guides.bracketPairs": "active",
+    // ==================
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1500,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    // ==================
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.cursorBlinking": true,
+    // ==================
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    // ==================
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Night Owl (No Italics)",
+    "workbench.iconTheme": "file-icons",
+    "workbench.layoutControl.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.customLabels.patterns": {
+        "**/{layout,page}.tsx": "${dirname} ${filename}"
+    },
+    "window.title": "${rootName}",
+    "explorer.confirmDragAndDrop": false,
+    // ==================
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html"
+    },
+    // ==================
+    "javascript.preferences.renameMatchingJsxTags": true,
+    "typescript.preferences.renameMatchingJsxTags": true,
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    // ==================
+    "npm.packageManager": "pnpm",
+    "window.zoomLevel": 0.7,
+    "window.commandCenter": false,
+    "reactSnippets.settings.importReactOnTop": false,
+    "telemetry.telemetryLevel": "off",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    // ==================
+    "cSpell.userWords": [
+        "Bitwarden",
+        "neondatabase",
+        "nextjs",
+        "progressbar",
+        "sonner",
+        "turbopack"
+    ],
 }
