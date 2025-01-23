@@ -53,7 +53,6 @@ alias yt="yt-dlp -f - --embed-metadata"
 # Environment Variables
 # ========================
 export FPATH="~/eza/completions/zsh:$FPATH"
-export PATH="/Users/farshad/Library/Application Support/fnm:$PATH"
 export PNPM_HOME="/Users/farshad/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export BAT_THEME=tokyonight_night
@@ -62,7 +61,6 @@ export BAT_THEME=tokyonight_night
 # Initializations
 # ========================
 eval "$(zoxide init zsh)"
-eval "$(fnm env)"
 
 # pnpm
 export PNPM_HOME="/Users/farshad/Library/pnpm"
@@ -71,3 +69,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+eval "$(fnm env --use-on-cd --shell zsh --version-file-strategy=recursive)"
