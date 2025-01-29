@@ -29,8 +29,9 @@
   "window.zoomLevel": 0.7,
   "window.title": "${rootName}",
   "window.commandCenter": false,
+   "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
-  "workbench.activityBar.location": "hidden",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.customLabels.patterns": {
     "**/{layout,page}.tsx": "${dirname} ${filename}"
@@ -60,7 +61,7 @@
   "files.associations": {
     "*.css": "tailwindcss",
     "*.js": "javascriptreact",
-    "*.tsx": "typescriptreact"
+    "*.tsx": "typescriptreact",
   },
   // Package Management
   "npm.packageManager": "pnpm",
@@ -110,6 +111,8 @@
     "icon": "check",
     "type": "text"
   },
+  // Console Ninja
+  "console-ninja.featureSet": "Community",
   // React DevTools integration
   "debug.javascript.autoAttachFilter": "smart",
   // Better JSX/TSX experience
@@ -118,7 +121,7 @@
   "terminal.integrated.env.osx": {},
   // Spell Checker
   "cSpell.enabledFileTypes": {
-    "dotenv": false
+    "dotenv": false,
   },
   "cSpell.ignorePaths": [
     "package-lock.json",
@@ -129,7 +132,8 @@
     ".vscode",
     ".vscode-insiders",
     "pnpm-lock.yaml",
-    "user.js"
+    "user.js",
+    ".env"
   ],
   "cSpell.userWords": [
     "Autofocus",
@@ -159,4 +163,5 @@
     "vercel",
     "vinxi"
   ],
+ 
 }
