@@ -1,83 +1,122 @@
 {
-  "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
-  "editor.fontSize": 17,
-  "editor.lineHeight": 1.6,
+  // Editor Essentials
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.7,
   "editor.fontLigatures": true,
-  // "editor.wordWrap": "on",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.padding.top": 6,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit"
-  },
-  "editor.linkedEditing": true,
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "editor.minimap.enabled": false,
-  "editor.tabSize": 2,
-  "editor.glyphMargin": false,
   "editor.guides.bracketPairs": "active",
-  // ==================
-  "files.associations": {
-    "*.css": "tailwindcss"
+  "editor.padding.top": 6,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+  // Formatting
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1500,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  // ==================
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.cursorBlinking": true,
-  // ==================
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  // ==================
-  "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Night Owl (No Italics)",
-  "workbench.iconTheme": "file-icons",
+  // Minimal UI
+  "window.zoomLevel": 0.7,
+  "window.title": "${rootName}",
+  "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "hidden",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.customLabels.patterns": {
     "**/{layout,page}.tsx": "${dirname} ${filename}"
   },
-  "window.title": "${rootName}",
-  "explorer.confirmDragAndDrop": false,
   "breadcrumbs.enabled": false,
-  // ==================
+  "editor.glyphMargin": false,
+  // Terminal
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.cursorBlinking": true,
+  // Git
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  // JavaScript/TypeScript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.paths": true,
+  "typescript.suggest.paths": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  // File Handling
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1500,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.js": "javascriptreact",
+    "*.tsx": "typescriptreact"
+  },
+  // Package Management
+  "npm.packageManager": "pnpm",
+  // Tailwind
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
-  // ==================
-  "javascript.preferences.renameMatchingJsxTags": true,
-  "typescript.preferences.renameMatchingJsxTags": true,
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  // ==================
-  "npm.packageManager": "pnpm",
-  "window.zoomLevel": 0.7,
-  "window.commandCenter": false,
-  "reactSnippets.settings.importReactOnTop": false,
+  // System
   "telemetry.telemetryLevel": "off",
+  // GitHub Copilot
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false
   },
-  // ==================
+  // Misc
+  "explorer.confirmDragAndDrop": false,
+  "reactSnippets.settings.importReactOnTop": false,
+  // React/Next.js Optimizations
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.sortImports": "explicit"
+  },
+  // Error Lens
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning"
+  ],
+  "errorLens.excludeBySource": [
+    "eslint"
+  ],
+  // Import Cost
+  "importCost.smallPackageSize": 50,
+  "importCost.mediumPackageSize": 100,
+  // Todo Tree
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "#fff",
+    "background": "#ffb100",
+    "icon": "check",
+    "type": "text"
+  },
+  // React DevTools integration
+  "debug.javascript.autoAttachFilter": "smart",
+  // Better JSX/TSX experience
+  "typescript.preferences.jsxAttributeCompletionStyle": "braces",
+  "javascript.preferences.jsxAttributeCompletionStyle": "braces",
+  "terminal.integrated.env.osx": {},
+  // Spell Checker
   "cSpell.enabledFileTypes": {
     "dotenv": false
   },
@@ -119,5 +158,5 @@
     "Vazirmatn",
     "vercel",
     "vinxi"
-  ]
+  ],
 }
