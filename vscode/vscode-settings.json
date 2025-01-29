@@ -29,7 +29,7 @@
   "window.zoomLevel": 0.7,
   "window.title": "${rootName}",
   "window.commandCenter": false,
-   "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
@@ -163,5 +163,4 @@
     "vercel",
     "vinxi"
   ],
- 
 }
