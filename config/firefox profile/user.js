@@ -32,3 +32,24 @@ user_pref("browser.discovery.enabled", false); // Disable personalized extension
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false); // Disable recommendations in about:addons' Extensions and Themes panes
 user_pref("extensions.getAddons.showPane", false); // Disable about:addons' Recommendations pane
 user_pref("browser.urlbar.trending.featureGate", false); // Disable urlbar trending search suggestions
+
+// === Experimental ===
+user_pref("browser.search.region", "US");
+user_pref("browser.tabs.closeWindowWithLastTab", false);
+
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("toolkit.telemetry.unified", false);
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.server", "data:,");
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.coverage.opt-out", true);
+user_pref("toolkit.coverage.opt-out", true);
+user_pref("toolkit.coverage.endpoint.base", "");
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);

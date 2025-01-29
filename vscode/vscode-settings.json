@@ -1,87 +1,123 @@
 {
-    "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
-    "editor.fontSize": 17,
-    "editor.lineHeight": 1.6,
-    "editor.fontLigatures": true,
-    // "editor.wordWrap": "on",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit",
-        "source.addMissingImports": "explicit"
-    },
-    "editor.linkedEditing": true,
-    "editor.quickSuggestions": {
-        "strings": "on"
-    },
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
-    "editor.glyphMargin": false,
-    "editor.guides.bracketPairs": "active",
-    // ==================
-    "files.associations": {
-        "*.css": "tailwindcss"
-    },
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1500,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    // ==================
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.cursorBlinking": true,
-    // ==================
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    // ==================
-    "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Night Owl (No Italics)",
-    "workbench.iconTheme": "file-icons",
-    "workbench.layoutControl.enabled": false,
-    "workbench.activityBar.location": "hidden",
-    "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.editor.customLabels.patterns": {
-        "**/{layout,page}.tsx": "${dirname} ${filename}"
-    },
-    "window.title": "${rootName}",
-    "explorer.confirmDragAndDrop": false,
-    // ==================
-    "tailwindCSS.emmetCompletions": true,
-    "tailwindCSS.includeLanguages": {
-        "plaintext": "html"
-    },
-    // ==================
-    "javascript.preferences.renameMatchingJsxTags": true,
-    "typescript.preferences.renameMatchingJsxTags": true,
-    "javascript.suggest.autoImports": true,
-    "typescript.suggest.autoImports": true,
-    // ==================
-    "npm.packageManager": "pnpm",
-    "window.zoomLevel": 0.7,
-    "window.commandCenter": false,
-    "reactSnippets.settings.importReactOnTop": false,
-    "telemetry.telemetryLevel": "off",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    // ==================
-    "cSpell.userWords": [
-        "Bitwarden",
-        "neondatabase",
-        "nextjs",
-        "progressbar",
-        "sonner",
-        "turbopack"
-    ],
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
+  "editor.fontSize": 17,
+  "editor.lineHeight": 1.6,
+  "editor.fontLigatures": true,
+  // "editor.wordWrap": "on",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.padding.top": 6,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "editor.linkedEditing": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.glyphMargin": false,
+  "editor.guides.bracketPairs": "active",
+  // ==================
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1500,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // ==================
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono, Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.cursorBlinking": true,
+  // ==================
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  // ==================
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.iconTheme": "file-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.customLabels.patterns": {
+    "**/{layout,page}.tsx": "${dirname} ${filename}"
+  },
+  "window.title": "${rootName}",
+  "explorer.confirmDragAndDrop": false,
+  "breadcrumbs.enabled": false,
+  // ==================
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  // ==================
+  "javascript.preferences.renameMatchingJsxTags": true,
+  "typescript.preferences.renameMatchingJsxTags": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  // ==================
+  "npm.packageManager": "pnpm",
+  "window.zoomLevel": 0.7,
+  "window.commandCenter": false,
+  "reactSnippets.settings.importReactOnTop": false,
+  "telemetry.telemetryLevel": "off",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  // ==================
+  "cSpell.enabledFileTypes": {
+    "dotenv": false
+  },
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/{info,lfs,logs,refs,objects}/**",
+    ".git/{index,*refs,*HEAD}",
+    ".vscode",
+    ".vscode-insiders",
+    "pnpm-lock.yaml",
+    "user.js"
+  ],
+  "cSpell.userWords": [
+    "Autofocus",
+    "Bitwarden",
+    "bunx",
+    "farshad",
+    "Filenaming",
+    "Hatami",
+    "isbot",
+    "lucide",
+    "mujer",
+    "neondatabase",
+    "neondb",
+    "nextjs",
+    "Nunito",
+    "Pipeable",
+    "progressbar",
+    "shadcn",
+    "sonner",
+    "supabase",
+    "trivius",
+    "turbopack",
+    "ultracite",
+    "uuidv",
+    "vazir",
+    "Vazirmatn",
+    "vercel",
+    "vinxi"
+  ]
 }

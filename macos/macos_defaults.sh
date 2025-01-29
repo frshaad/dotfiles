@@ -26,7 +26,7 @@ mkdir -p ~/Pictures/Screenshots
 apply_default "Change screenshots saving directory" \  "defaults write com.apple.screencapture location ~/Pictures/Screenshots"
 
 # Change screenshots saving directory
-apply_default "Change screenshots file format" \  "defaults write com.apple.screencapture type jpg"
+apply_default "Change screenshots file format" \  "defaults write com.apple.screencapture type png"
 
 # Expand save/print panels by default
 apply_default "Expand save panels by default" \
@@ -113,17 +113,9 @@ apply_default "Enable tap to click for trackpad" \
 apply_default "Enable tap to click on login screen" \
     "defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true; defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1; defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1"
 
-# Save screenshots to the Downloads folder
-apply_default "Set screenshot location to Downloads folder" \
-    "defaults write com.apple.screencapture location -string '${HOME}/Downloads'"
-
-# Save screenshots in PNG format
-apply_default "Set screenshot format to PNG" \
-    "defaults write com.apple.screencapture type -string 'png'"
-
 # Disable shadow in screenshots
 apply_default "Disable screenshot shadows" \
-    "defaults write com.apple.screencapture disable-shadow -bool true"
+    "defaults write com.apple.screencapture disable-shadow -bool false"
 
 # Apply screenshot changes
 killall SystemUIServer || echo "Warning: Failed to refresh SystemUIServer settings"
